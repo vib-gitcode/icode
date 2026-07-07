@@ -26,7 +26,7 @@ body {
 
 }
 
-button {
+.themebutton {
     border: solid 1px black;
     font-size: 12px;
     border-radius: 20px;
@@ -38,14 +38,14 @@ button {
 
 }
 
-button:hover {
+.themebutton:hover {
     transform: translateY(5px);
     box-shadow: 0px 5px 1px lightgreen;
     background-color: lightpink;
 
 }
 
-button:active {
+.themebutton:active {
     transform: translateY(10px);
     box-shadow: 0px 0px 1px lightgreen;
 
