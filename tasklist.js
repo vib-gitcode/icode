@@ -10,3 +10,7 @@ function delAllTasks() {
 tasklist.innerHTML=" "
 
 }
+function delIndTasks(event) {
+event.target.remove
+    
+}
