@@ -21,7 +21,9 @@ tasklist.innerHTML=" "
 
 }
 
-const input = document.getElementById('tasktextbox')
+//const input = document.getElementById('tasktextbox')
+//const displayData = document.getElementById('displayData')
+
 
 
 function delIndTasks(event) {
