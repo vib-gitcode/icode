@@ -16,9 +16,14 @@ document.querySelectorAll(".task").forEach(function(event) {
 function delAllTasks() {
     const tasklist = document.getElementById("tasks")
 tasklist.innerHTML=" "
-print()
+
+
 
 }
+
+const input = document.getElementById('tasktextbox')
+
+
 function delIndTasks(event) {
 event.target.remove()
 console.log("hi")
