@@ -1,13 +1,16 @@
-var taskWidget = document.getElementById("w3")
-function newtask(){
-const input = document.getElementById("tasktextbox")
 const tasklist = document.getElementById("tasks")
-tasklist.innerHTML+="<li class='task'>"+input.value+"</li>"
-var tasks = document.getElementsByClassName("task")
-document.querySelectorAll(".task").forEach(function(event) {
-    event.addEventListener('click',delIndTasks)
-})
+tasklist.innerHTML = localStorage.getItem("tasks")
+
+var taskWidget = document.getElementById("w3")
+function newtask() {
+    const input = document.getElementById("tasktextbox")
     
+    tasklist.innerHTML += "<li class='task'>" + input.value + "</li>"
+    var tasks = document.getElementsByClassName("task")
+    document.querySelectorAll(".task").forEach(function (event) {
+        event.addEventListener('click', delIndTasks)
+    })
+localStorage.setItem("tasks", tasklist.innerHTML)
 }
 
 
@@ -15,7 +18,7 @@ document.querySelectorAll(".task").forEach(function(event) {
 
 function delAllTasks() {
     const tasklist = document.getElementById("tasks")
-tasklist.innerHTML=" "
+    tasklist.innerHTML = " "
 
 
 
@@ -27,8 +30,9 @@ tasklist.innerHTML=" "
 
 
 function delIndTasks(event) {
-event.target.remove()
-console.log("hi")
-    
+    event.target.remove()
+    console.log("hi")
+
 }
 
+localStorage
