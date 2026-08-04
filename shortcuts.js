@@ -4,7 +4,7 @@ var taskWidget = document.getElementById("w3")
 function newshortcut() {
     const linkinput = document.getElementById("linktextbox")
     const nameinput = document.getElementById("nametextbox")
-    shortcuts.innerHTML += "<a href= https://"+ linkinput.value + " class='link'>" + nameinput.value + "</a>"
+    shortcuts.innerHTML += "<a target='noopener' href= https://"+ linkinput.value + " class='link'>" + nameinput.value + "</a>"
 localStorage.setItem("links", shortcuts.innerHTML)
 }
 
