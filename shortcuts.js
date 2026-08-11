@@ -12,7 +12,7 @@ localStorage.setItem("links", shortcuts.innerHTML)
 
 
 function delAllTasks() {
-    const shortcuts = document.getElementById("tasks")
+    const shortcuts = document.getElementById("links")
     shortcuts.innerHTML = " "
 
 
